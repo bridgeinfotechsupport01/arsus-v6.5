@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARSUS Solutions & Services | Placement, Training & Digital Solutions</title>
+  <meta name="description" content="ARSUS Solutions & Services Private Limited is a Coimbatore-based corporate partner specializing in IT & Non-IT Placement Services, Hands-on Network Training, Custom Website Designing, and Performance Digital Marketing." />
+  
+  <!-- Canonical & SEO -->
+  <link rel="canonical" href="https://arsus.in/" />
+  <meta property="og:title" content="ARSUS Solutions & Services | Placement, Training & Digital Solutions" />
+  <meta property="og:description" content="Coimbatore's premier partner for IT & Non-IT Placement, Network Training with direct placement support, Website Designing, and Digital Marketing." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://arsus.in/" />
+  <meta property="og:image" content="logo/favicon.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo/favicon.png" />
+  <link rel="apple-touch-icon" href="logo/favicon.png" />
+
+  <!-- Typography & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ==========================================================================
+       01. STICKY MINIMAL NAVIGATION
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-link" title="ARSUS Solutions & Services">
+        <img src="logo/logof2.png" alt="ARSUS Solutions & Services Logo" class="nav-brand-img" />
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="placement-training.html" class="nav-link">Placement & Training</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" aria-label="Toggle Color Theme" title="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm">
+          <span>Get in Touch</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Open Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay & Menu -->
+  <div class="mobile-drawer-overlay" id="drawer-overlay"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+    <div class="drawer-header">
+      <img src="logo/logof2.png" alt="ARSUS Logo" class="drawer-brand-img" />
+      <button class="drawer-close-btn" id="drawer-close" aria-label="Close Menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul class="drawer-nav-list">
+      <li><a href="index.html" class="drawer-nav-link active">Home</a></li>
+      <li><a href="about.html" class="drawer-nav-link">About Us</a></li>
+      <li><a href="services.html" class="drawer-nav-link">Services</a></li>
+      <li><a href="placement-training.html" class="drawer-nav-link">Placement & Training</a></li>
+      <li><a href="contact.html" class="drawer-nav-link">Contact Us</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <a href="#contact" class="btn btn-primary w-full text-center">Get in Touch</a>
+      <a href="tel:+919345201493" class="btn btn-secondary w-full text-center">
+        <i class="fa-solid fa-phone"></i>
+        <span>+91 9345201493</span>
+      </a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- ==========================================================================
+         02. HERO / BANNER SECTION
+         ========================================================================== -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Hero Left Column -->
+          <div class="hero-content">
+            <h1 class="hero-title">
+              Building Careers.<br />
+              Growing Businesses.<br />
+              <span class="hero-rotator-box">
+                <span class="hero-rotator-phrase active"><i class="fa-solid fa-briefcase"></i> IT &amp; Non-IT Placement Services</span>
+                <span class="hero-rotator-phrase"><i class="fa-solid fa-network-wired"></i> Network Training + Placement Support</span>
+                <span class="hero-rotator-phrase"><i class="fa-solid fa-laptop-code"></i> Custom Website Designing</span>
+                <span class="hero-rotator-phrase"><i class="fa-solid fa-chart-line"></i> Performance Digital Marketing</span>
+              </span>
+            </h1>
+
+
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-primary">
+                <span>Get in Touch</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="#expertise" class="btn btn-secondary">
+                <span>Explore Our Services</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Right Column: 4 Services Floating Stacked Deck (4s Shuffle Loop) -->
+          <div class="hero-visual">
+            <div class="hero-deck-container" id="hero-deck-container" aria-label="ARSUS Core Services Deck">
+              <div class="hero-deck-stack" id="hero-deck-stack">
+                <!-- Card 1: Placement Solutions -->
+                <div class="deck-card pos-0" data-card-idx="0">
+                  <div class="deck-card-visual">
+                    <img src="card img/Placement Solutions Recruitment Team.png" alt="Placement Solutions Visual" class="deck-card-img" />
+                    <a href="services.html#placement" class="card-action-link" aria-label="Explore Placement Service">
+                      <span class="learn">Explore Service</span>
+                      <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Card 2: Network Training -->
+                <div class="deck-card pos-1" data-card-idx="1">
+                  <div class="deck-card-visual">
+                    <img src="card img/Network Training Collaboration Illustration.png" alt="Network Training Visual" class="deck-card-img" />
+                    <a href="services.html#networking" class="card-action-link" aria-label="Explore Networking Service">
+                      <span class="learn">Explore Service</span>
+                      <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Card 3: Website Designing -->
+                <div class="deck-card pos-2" data-card-idx="2">
+                  <div class="deck-card-visual">
+                    <img src="card img/Website Designing Team Banner.png" alt="Website Designing Visual" class="deck-card-img" />
+                    <a href="services.html#web-design" class="card-action-link" aria-label="Explore Web Design Service">
+                      <span class="learn">Explore Service</span>
+                      <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Card 4: Digital Marketing -->
+                <div class="deck-card pos-3" data-card-idx="3">
+                  <div class="deck-card-visual">
+                    <img src="card img/Digital Marketing Growth Team.png" alt="Digital Marketing Visual" class="deck-card-img" />
+                    <a href="services.html#digital-marketing" class="card-action-link" aria-label="Explore Digital Marketing Service">
+                      <span class="learn">Explore Service</span>
+                      <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         03. IMPACT / TRUST STATISTICS (MOVED BELOW HERO)
+         ========================================================================== -->
+    <section class="stats-section" id="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="1500">1500</span>
+              <span class="stat-suffix">+</span>
+            </div>
+            <span class="stat-label">Students Mentored</span>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="98">98</span>
+              <span class="stat-suffix">%</span>
+            </div>
+            <span class="stat-label">Placement Record</span>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="120">120</span>
+              <span class="stat-suffix">+</span>
+            </div>
+            <span class="stat-label">Client Projects</span>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="24">24</span>
+              <span class="stat-suffix">/7</span>
+            </div>
+            <span class="stat-label">Dedicated SLA Support</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         04. OUR EXPERTISE (THE 4 NEW CORE SERVICES)
+         ========================================================================== -->
+    <section class="section section-alt" id="expertise">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">OUR EXPERTISE</span>
+          <h2 class="section-title">Core Services Built for Tangible Outcomes</h2>
+          <p class="section-subtitle">
+            Strategic digital craftsmanship and talent acquisition capabilities focused on sustainable organizational growth.
+          </p>
+        </div>
+
+        <div class="services-grid-4">
+          <!-- 01: IT / NON-IT PLACEMENT SERVICES -->
+          <article class="service-card">
+            <div class="service-card-top">
+              <div class="service-icon-box blue">
+                <i class="fa-solid fa-briefcase"></i>
+              </div>
+            </div>
+            <h3 class="service-title">IT & Non-IT Placement Services</h3>
+            <p class="service-desc">
+              End-to-end recruitment drives, talent sourcing, lateral hiring, and candidate evaluation connecting pre-vetted professionals with top corporate employers.
+            </p>
+
+            <div class="service-tags">
+              <span class="service-tag">Campus Drives</span>
+              <span class="service-tag">Staff Augmentation</span>
+              <span class="service-tag">Lateral Tech Hiring</span>
+              <span class="service-tag">Candidate Screening</span>
+            </div>
+
+            <div class="service-card-action">
+              <a href="services.html#placement" class="service-card-link">
+                <span>Explore Placement Details</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- 02: NETWORK TRAINING + PLACEMENT SUPPORT -->
+          <article class="service-card">
+            <div class="service-card-top">
+              <div class="service-icon-box green">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+            </div>
+            <h3 class="service-title">Network Training + Placement Support</h3>
+            <p class="service-desc">
+              Practical routing, switching, IP architecture, and enterprise network administration combined with rigorous mock interviews and direct placement drives.
+            </p>
+
+            <div class="service-tags">
+              <span class="service-tag">Routing & Switching</span>
+              <span class="service-tag">Cisco Topologies</span>
+              <span class="service-tag">Network Security</span>
+              <span class="service-tag">Direct Placement</span>
+            </div>
+
+            <div class="service-card-action">
+              <a href="services.html#networking" class="service-card-link">
+                <span>View Training Curriculum</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- 03: WEBSITE DESIGNING -->
+          <article class="service-card">
+            <div class="service-card-top">
+              <div class="service-icon-box gold">
+                <i class="fa-solid fa-compass-drafting"></i>
+              </div>
+            </div>
+            <h3 class="service-title">Custom Website Designing</h3>
+            <p class="service-desc">
+              Corporate websites, web portals, and landing pages designed with clean code, fast load times, accessible typography, and high-trust branding.
+            </p>
+
+            <div class="service-tags">
+              <span class="service-tag">Responsive UI/UX</span>
+              <span class="service-tag">Corporate Portals</span>
+              <span class="service-tag">SEO Architecture</span>
+              <span class="service-tag">Performance Speed</span>
+            </div>
+
+            <div class="service-card-action">
+              <a href="services.html#web-design" class="service-card-link">
+                <span>View Web Capabilities</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- 04: DIGITAL MARKETING -->
+          <article class="service-card">
+            <div class="service-card-top">
+              <div class="service-icon-box blue">
+                <i class="fa-solid fa-bullhorn"></i>
+              </div>
+            </div>
+            <h3 class="service-title">Results-Driven Digital Marketing</h3>
+            <p class="service-desc">
+              Data-backed marketing campaigns including Search Engine Optimization (SEO), social media brand positioning, and targeted business lead acquisition.
+            </p>
+
+            <div class="service-tags">
+              <span class="service-tag">Search Optimization</span>
+              <span class="service-tag">Targeted PPC</span>
+              <span class="service-tag">Social Growth</span>
+              <span class="service-tag">Lead Generation</span>
+            </div>
+
+            <div class="service-card-action">
+              <a href="services.html#digital-marketing" class="service-card-link">
+                <span>View Growth Strategies</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         05. WHY ARSUS SECTION
+         ========================================================================== -->
+    <section class="section" id="why-arsus">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow green">WHY CHOOSE US</span>
+          <h2 class="section-title">A Partnership Grounded in Execution</h2>
+          <p class="section-subtitle">
+            We reject generic templates and superficial theory. Every service is anchored in measurable business results and human guidance.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="why-icon"><i class="fa-solid fa-bullseye"></i></div>
+            <h3 class="why-title">Business-Focused Approach</h3>
+            <p class="why-desc">
+              We align technology architectures, websites, and workforce solutions with your specific commercial objectives.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+            <h3 class="why-title">Skilled Industry Mentors</h3>
+            <p class="why-desc">
+              Experienced practitioners in enterprise networking, web development, and corporate recruitment guiding candidates and projects.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon"><i class="fa-solid fa-microchip"></i></div>
+            <h3 class="why-title">Practical Hands-On Execution</h3>
+            <p class="why-desc">
+              Training and deliverables built around real hardware topologies, live deployment environments, and modern workflows.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon"><i class="fa-solid fa-handshake"></i></div>
+            <h3 class="why-title">Flexible Engagement Models</h3>
+            <p class="why-desc">
+              Adaptable service agreements designed for startups, expanding enterprises, academic institutions, and individual professionals.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3 class="why-title">Reliable Partnership</h3>
+            <p class="why-desc">
+              Transparent service-level agreements, open communication channels, and dependable Coimbatore-based accountability.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+            <h3 class="why-title">Future-Ready Capabilities</h3>
+            <p class="why-desc">
+              Constantly updated technology stacks, modern networking protocols, and contemporary digital marketing techniques.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         06. TRUSTED BY / CLIENT LOGO MARQUEE (CONTINUOUS LOOP)
+         ========================================================================== -->
+    <section class="marquee-section" id="partners">
+      <div class="marquee-header">
+        <p>Technology Stacks & Enterprise Ecosystems We Master & Connect With</p>
+      </div>
+
+      <div class="marquee-track-wrap" aria-label="Technology & Placement Ecosystem">
+        <!-- Duplicate set ensures 100% gapless infinite loop -->
+        <div class="marquee-track">
+          <div class="client-logo-item"><i class="fa-brands fa-cisco"></i> <span>Cisco Networking</span></div>
+          <div class="client-logo-item"><i class="fa-brands fa-microsoft"></i> <span>Microsoft Enterprise</span></div>
+          <div class="client-logo-item"><i class="fa-brands fa-aws"></i> <span>AWS Cloud Architecture</span></div>
+          <div class="client-logo-item"><i class="fa-brands fa-google"></i> <span>Google Analytics & Ads</span></div>
+          <div class="client-logo-item"><i class="fa-brands fa-react"></i> <span>React Modern Web</span></div>
+          <div class="client-logo-item"><i class="fa-brands fa-node-js"></i> <span>Node.js Backend</span></div>
+          <div class="client-logo-item"><i class="fa-brands fa-python"></i> <span>Python Data Systems</span></div>
+          <div class="client-logo-item"><i class="fa-brands fa-linux"></i> <span>Linux Server Admin</span></div>
+          <div class="client-logo-item"><i class="fa-brands fa-wordpress"></i> <span>WordPress Portals</span></div>
+          
+          <!-- Cloned Set for Seamless Infinite Loop -->
+          <div class="client-logo-item"><i class="fa-brands fa-cisco"></i> <span>Cisco Networking</span></div>
+          <div class="client-logo-item"><i class="fa-brands fa-microsoft"></i> <span>Microsoft Enterprise</span></div>
+          <div class="client-logo-item"><i class="fa-brands fa-aws"></i> <span>AWS Cloud Architecture</span></div>
+          <div class="client-logo-item"><i class="fa-brands fa-google"></i> <span>Google Analytics & Ads</span></div>
+          <div class="client-logo-item"><i class="fa-brands fa-react"></i> <span>React Modern Web</span></div>
+          <div class="client-logo-item"><i class="fa-brands fa-node-js"></i> <span>Node.js Backend</span></div>
+          <div class="client-logo-item"><i class="fa-brands fa-python"></i> <span>Python Data Systems</span></div>
+          <div class="client-logo-item"><i class="fa-brands fa-linux"></i> <span>Linux Server Admin</span></div>
+          <div class="client-logo-item"><i class="fa-brands fa-wordpress"></i> <span>WordPress Portals</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         07. CAREER & PLACEMENT ECOSYSTEM (5-STAGE TIMELINE)
+         ========================================================================== -->
+    <section class="section section-alt" id="career">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">CAREER LAUNCHPAD</span>
+          <h2 class="section-title">From Learning to Corporate Career</h2>
+          <p class="section-subtitle">
+            A proven 5-stage talent pipeline transforming college graduates and job seekers into industry-ready corporate professionals.
+          </p>
+        </div>
+
+        <div class="career-timeline-grid">
+          <div class="career-step-card">
+            <div class="step-num-badge">01</div>
+            <h3 class="step-title">Learn</h3>
+            <p class="step-desc">Master core networking, IT infrastructure, or digital skills with real faculty.</p>
+          </div>
+
+          <div class="career-step-card">
+            <div class="step-num-badge">02</div>
+            <h3 class="step-title">Practice</h3>
+            <p class="step-desc">Hands-on lab topologies, router configurations, and real-time project tasks.</p>
+          </div>
+
+          <div class="career-step-card">
+            <div class="step-num-badge">03</div>
+            <h3 class="step-title">Build</h3>
+            <p class="step-desc">Live assignments, Git collaboration, and end-to-end technical portfolios.</p>
+          </div>
+
+          <div class="career-step-card">
+            <div class="step-num-badge">04</div>
+            <h3 class="step-title">Prepare</h3>
+            <p class="step-desc">Quantitative aptitude, logical reasoning, verbal ability, and mock interview coaching.</p>
+          </div>
+
+          <div class="career-step-card highlight">
+            <div class="step-num-badge"><i class="fa-solid fa-check"></i></div>
+            <h3 class="step-title">Get Placed</h3>
+            <p class="step-desc">Direct corporate placement drives connecting candidates with reputable hiring companies.</p>
+          </div>
+        </div>
+
+        <!-- Campus Recruitment Training (CRT) Spotlight -->
+        <div class="crt-banner">
+          <div class="crt-content">
+            <h3>Campus Recruitment Training (CRT)</h3>
+            <p>
+              Our intensive CRT program empowers college institutions and students with comprehensive preparation for IT and non-IT recruitment drives.
+            </p>
+            <a href="placement-training.html" class="btn btn-primary btn-sm">
+              <span>View Training Modules</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="crt-pills">
+            <div class="crt-pill"><i class="fa-solid fa-circle-check"></i> Quantitative Aptitude</div>
+            <div class="crt-pill"><i class="fa-solid fa-circle-check"></i> Logical Reasoning</div>
+            <div class="crt-pill"><i class="fa-solid fa-circle-check"></i> Verbal Ability</div>
+            <div class="crt-pill"><i class="fa-solid fa-circle-check"></i> Technical & Coding Tracks</div>
+            <div class="crt-pill"><i class="fa-solid fa-circle-check"></i> One-on-One Mock Interviews</div>
+            <div class="crt-pill"><i class="fa-solid fa-circle-check"></i> Resume & Profile Building</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         09. ABOUT ARSUS SECTION (MOVED DOWN & REWRITTEN NATURALLY)
+         ========================================================================== -->
+    <section class="section section-alt" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content">
+            <span class="section-eyebrow">ABOUT ARSUS</span>
+            <h2>Technology, Digital Services & Career Solutions from Coimbatore</h2>
+            <p class="about-lead">
+              <strong>ARSUS Solutions & Services Private Limited</strong> is a Coimbatore-based technology and career solutions company helping businesses build stronger digital experiences while helping candidates move confidently toward meaningful careers.
+            </p>
+            <p class="why-desc" style="margin-bottom: 1.5rem;">
+              Headquartered in Savithiri Nagar, Ashok Nagar, Coimbatore, we combine deep technical execution with customer-centric focus. Whether designing an enterprise web portal, accelerating digital marketing ROI, or training graduates for in-demand network engineering roles, we deliver measurable and dependable outcomes.
+            </p>
+
+            <div class="about-credentials">
+              <div class="credential-item">
+                <div class="title">Corporate Headquarters</div>
+                <div class="val">Ashok Nagar, Coimbatore</div>
+              </div>
+              <div class="credential-item">
+                <div class="title">Corporate Identity Number</div>
+                <div class="val">U78100TZ2023PTC028642</div>
+              </div>
+              <div class="credential-item">
+                <div class="title">Direct Contact</div>
+                <div class="val">+91 9345201493</div>
+              </div>
+              <div class="credential-item">
+                <div class="title">Official Email</div>
+                <div class="val">info@arsus.in</div>
+              </div>
+            </div>
+
+            <a href="about.html" class="btn btn-secondary">
+              <span>Read Our Full Story</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="about-visual">
+            <div class="ecosystem-composition" style="max-width: 100%;">
+              <div class="eco-card">
+                <div class="eco-card-icon blue"><i class="fa-solid fa-certificate"></i></div>
+                <div class="eco-card-title">Incorporated Entity</div>
+                <div class="eco-card-sub">Registered Private Limited Company in Tamil Nadu</div>
+              </div>
+              <div class="eco-card">
+                <div class="eco-card-icon green"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="eco-card-title">1500+ Mentored</div>
+                <div class="eco-card-sub">Engineers, science graduates & corporate trainees</div>
+              </div>
+              <div class="eco-card">
+                <div class="eco-card-icon gold"><i class="fa-solid fa-globe"></i></div>
+                <div class="eco-card-title">Digital Craftsmanship</div>
+                <div class="eco-card-sub">High-speed web platforms & marketing campaigns</div>
+              </div>
+              <div class="eco-card">
+                <div class="eco-card-icon navy"><i class="fa-solid fa-building-columns"></i></div>
+                <div class="eco-card-title">Campus CRT Partner</div>
+                <div class="eco-card-sub">Trusted by regional engineering colleges</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         10. CONTACT SECTION & WHATSAPP FORM
+         ========================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">GET IN TOUCH</span>
+          <h2 class="section-title">Let's Build What's Next</h2>
+          <p class="section-subtitle">
+            Whether you need workforce placement, hands-on network training, high-impact web design, or digital marketing growth, our Coimbatore team is ready to help.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Info Panel -->
+          <div class="contact-info-panel">
+            <div class="contact-block">
+              <div class="contact-block-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-block-body">
+                <h4>Corporate Office</h4>
+                <p>
+                  15/4, Savithiri Nagar, 1st Floor,<br />
+                  Ashok Nagar, Coimbatore - 641001,<br />
+                  Tamil Nadu, India.
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-block">
+              <div class="contact-block-icon green">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact-block-body">
+                <h4>Direct Phone & WhatsApp</h4>
+                <p><a href="tel:+919345201493"><strong>+91 9345201493</strong></a></p>
+                <small style="color: var(--text-muted);">Mon – Sat: 9:00 AM – 7:00 PM IST</small>
+              </div>
+            </div>
+
+            <div class="contact-block">
+              <div class="contact-block-icon gold">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-block-body">
+                <h4>Official Email</h4>
+                <p><a href="mailto:info@arsus.in"><strong>info@arsus.in</strong></a></p>
+              </div>
+            </div>
+
+            <div class="contact-block">
+              <div class="contact-block-icon">
+                <i class="fa-solid fa-building"></i>
+              </div>
+              <div class="contact-block-body">
+                <h4>Registered Office</h4>
+                <p>50/37, Achipatti, Pollachi, Coimbatore, Tamil Nadu - 642002</p>
+              </div>
+            </div>
+
+            <div style="margin-top: 2rem;">
+              <a href="https://wa.me/919345201493?text=Hello%20ARSUS%20Team%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener noreferrer" class="btn btn-gold w-full text-center">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>Direct WhatsApp Chat</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Interactive Form with WhatsApp Pre-Fill Flow -->
+          <div class="contact-form-panel">
+            <div class="form-header">
+              <h3>Send an Enquiry</h3>
+              <p>Fill in your requirements. We will prepare your enquiry and connect immediately.</p>
+            </div>
+
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="form-name">Full Name *</label>
+                  <input type="text" id="form-name" class="form-input" placeholder="e.g. Anand Kumar" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="form-email">Email Address *</label>
+                  <input type="email" id="form-email" class="form-input" placeholder="e.g. anand@company.com" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="form-phone">Phone Number *</label>
+                  <input type="tel" id="form-phone" class="form-input" placeholder="+91 98765 43210" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="form-service">Service Interested In *</label>
+                  <select id="form-service" class="form-select">
+                    <option value="IT & Non-IT Placement Services">IT & Non-IT Placement Services</option>
+                    <option value="Network Training + Placement Support">Network Training + Placement Support</option>
+                    <option value="Website Designing">Website Designing</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                    <option value="General Consultation">General Consultation</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="form-message">Your Message *</label>
+                <textarea id="form-message" class="form-textarea" rows="4" placeholder="Briefly describe your requirements or career background..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit-btn">
+                <span>Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+
+              <div id="form-feedback" class="form-feedback" role="alert"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       11. MINIMAL CORPORATE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-link">
+            <img src="logo/logof2.png" alt="ARSUS Logo" class="footer-brand-img" />
+          </a>
+          <p class="footer-desc">
+            ARSUS Solutions & Services Private Limited is a Coimbatore-based technology and career solutions company helping businesses build stronger digital experiences while helping candidates move confidently toward meaningful careers.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="placement-training.html">Placement & Training</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Core Services</h5>
+          <ul class="footer-links">
+            <li><a href="services.html#placement">Placement Services</a></li>
+            <li><a href="services.html#networking">Network Training</a></li>
+            <li><a href="services.html#web-design">Website Designing</a></li>
+            <li><a href="services.html#digital-marketing">Digital Marketing</a></li>
+            <li><a href="placement-training.html">Campus CRT Program</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Coimbatore Office</h5>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>15/4, Savithiri Nagar, 1st Floor, Ashok Nagar, Coimbatore - 641001</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+919345201493">+91 9345201493</a>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:info@arsus.in">info@arsus.in</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 ARSUS Solutions & Services Private Limited. All Rights Reserved.</p>
+        <span class="footer-cin">CIN: U78100TZ2023PTC028642</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       12. FLOATING WHATSAPP BUTTON (BOTTOM RIGHT)
+       ========================================================================== -->
+  <a href="https://wa.me/919345201493?text=Hello%20ARSUS%20Team%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span>Chat on WhatsApp</span>
+  </a>
+
+  <!-- Script -->
+  <script src="app.js"></script>
+</body>
+</html>
